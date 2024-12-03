@@ -44,7 +44,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
         // Store entID in cookies with SameSite and Secure attributes
         http.SetCookie(w, &http.Cookie{
             Name:     "entID",
-            Value:    entID,
+            Value:    "514004748",
             Path:     "/",
             HttpOnly: true,                      // Ensures the cookie is only accessible through HTTP(S)
             Secure:   true,                      // Ensures the cookie is only sent over HTTPS
